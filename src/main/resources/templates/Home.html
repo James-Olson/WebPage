@@ -11,28 +11,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-<video id="covermovie" loop autoplay muted>
+<video class="preload" id="covermovie" loop autoplay muted>
     <source th:src='@{/img/FinalCut.mp4}' type="video/mp4">
 </video>
-
-<div id="fadeAway"></div>
+<!--<div class="preload" id="curtainloader"></div>-->
+<div class="postload" id="curtain"></div>
 <div class="child" id="james">James</div>
 <div class="child" id="olson">Olson</div>
 
-<div>
-    <!--projects, axis scroll manipulation. name rides upward on window, -->
-</div>
+<div id="aboutme">
+    <p id="aboutmetext">As a software engineer my experience in programming languages, libraries, frameworks and
+        database management systems allows me to efficiently develop practical data flow sequences. Utilizing full-stack
+        web development talent I complete the developer task, entirely independent. An ability to lead and to work
+        collaboratively makes me a valuable asset to a software development team. I look forward to delivering
+        innovative software for the most meaningful reason.</p>
 
-<div>
-    <!--short summery and bibliography + selfie, maybe a contact me. etc-->
+    <div id="hypobottom">
+        <span>hello</span>
+    </div>
+
+
 </div>
 
 
 <script>
-    /*get rid of scroll bar*/
-    /*async function on movie.load=>fadeaway*/
-    /*async function for name keyframe*/
+    document.addEventListener('DOMContentLoaded', function() {
+        /*var preload = document.querySelectorAll('.preload');*/
+        var postload = document.querySelectorAll('.postload');
+        for (var j = 0; j < postload.length; j++) {
+            postload[j].style.opacity = 1;
+        }
+        function fadeOut(element, duration) {
+            var start = null;
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                var progress = timestamp - start;
+                element.style.opacity = 1 - Math.min(progress / duration, 1);
+                if (progress < duration) {
+                    requestAnimationFrame(step);
+                }
+            }
+            requestAnimationFrame(step);
+        }
+        for (var k = 0; k < postload.length; k++) {
+            fadeOut(postload[k], 4000);
+        }
+    });
 
+/*    $(window).on('load', function() {
+        let preload = $('.preload');
+        let postload = $('.postload');
+
+    preload.hide();
+    postload.show();
+    });*/
 </script>
 
 
@@ -40,3 +72,20 @@
 
 </body>
 </html>
+
+
+<!--async function for loading fade = make div that disapears when fade loads
+
+
+
+async function for loading movie = start fade when movie loads
+async function for name keyframe =
+text area
+menu popup hamburger on scroll that is fixed position and takes you to the selected section like its a shortcut-->
+
+
+<!--
+document.addEventListener("DOMContentLoaded", function () {
+var curtainloader = document.getElementById("curtainloader");
+curtainloader.style.display = "none";
+});-->
