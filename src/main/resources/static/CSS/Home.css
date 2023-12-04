@@ -37,14 +37,6 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-#curtainloader{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: coral;
-    z-index: 3;
-}
-
 #curtain {
     position: absolute;
     /*opacity: 1;*/
@@ -91,19 +83,10 @@ body::-webkit-scrollbar {
     padding-bottom: var(--thickness);
 }
 
-#aboutmetext:hover {
+#aboutmetext:onscroll {
     background-position: bottom left 20%;
     background-size: 100% calc(var(--thickness)*2);
 }
-
-/*@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
 
 @keyframes moveLeft {
     0% {
@@ -133,6 +116,14 @@ body::-webkit-scrollbar {
     0% { opacity: 1; background-color:Coral;}
     15% { opacity: 1; background-color:Coral;}
     100% { opacity: 0; background-color: transparent;}
+}*/
+
+/*#curtainloader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+    z-index: 3;
 }*/
 
 

@@ -35,36 +35,35 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        /*var preload = document.querySelectorAll('.preload');*/
+    document.addEventListener('DOMContentLoaded', function () {
         var postload = document.querySelectorAll('.postload');
         for (var j = 0; j < postload.length; j++) {
             postload[j].style.opacity = 1;
         }
-        function fadeOut(element, duration) {
+
+        function fadeOut(element, duration, delay) {
             var start = null;
             function step(timestamp) {
                 if (!start) start = timestamp;
                 var progress = timestamp - start;
-                element.style.opacity = 1 - Math.min(progress / duration, 1);
-                if (progress < duration) {
+                /*if ($('#covermovie').load)*//*working on .then type functions*/
+                if (progress < delay) {
+                    requestAnimationFrame(step);
+                    return;
+                }
+                var opacityPercentage = Math.min((progress - delay) / duration, 1);
+                element.style.opacity = 1 - opacityPercentage;
+                if (progress < (delay + duration)) {
                     requestAnimationFrame(step);
                 }
             }
+
             requestAnimationFrame(step);
         }
         for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 4000);
+            fadeOut(postload[k], 5000, 3000);
         }
     });
-
-/*    $(window).on('load', function() {
-        let preload = $('.preload');
-        let postload = $('.postload');
-
-    preload.hide();
-    postload.show();
-    });*/
 </script>
 
 
@@ -74,18 +73,44 @@
 </html>
 
 
-<!--async function for loading fade = make div that disapears when fade loads
-
 
 
 async function for loading movie = start fade when movie loads
-async function for name keyframe =
-text area
-menu popup hamburger on scroll that is fixed position and takes you to the selected section like its a shortcut-->
+
+
+
+
+<!--text area-->
+<!--menu popup hamburger on scroll that is fixed position and takes you to the selected section like it's a shortcut-->
+
 
 
 <!--
-document.addEventListener("DOMContentLoaded", function () {
-var curtainloader = document.getElementById("curtainloader");
-curtainloader.style.display = "none";
+document.addEventListener('DOMContentLoaded', function () {
+var postload = document.querySelectorAll('.postload');
+for (var j = 0; j < postload.length; j++) {
+postload[j].style.opacity = 1;
+}
+
+function fadeOut(element, duration, delay) {
+var start = null;
+function step(timestamp) {
+if (!start) start = timestamp;
+var progress = timestamp - start;
+if (progress < delay) {
+requestAnimationFrame(step);
+return;
+}
+var opacityPercentage = Math.min((progress - delay) / duration, 1);
+element.style.opacity = 1 - opacityPercentage;
+if (progress < (delay + duration)) {
+requestAnimationFrame(step);
+}
+}
+
+requestAnimationFrame(step);
+}
+for (var k = 0; k < postload.length; k++) {
+fadeOut(postload[k], 5000, 3000);
+}
 });-->
