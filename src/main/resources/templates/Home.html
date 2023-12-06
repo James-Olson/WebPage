@@ -14,7 +14,6 @@
 <video class="preload" id="covermovie" loop autoplay muted>
     <source th:src='@{/img/FinalCut.mp4}' type="video/mp4">
 </video>
-<!--<div class="preload" id="curtainloader"></div>-->
 <div class="postload" id="curtain"></div>
 <div class="child" id="james">James</div>
 <div class="child" id="olson">Olson</div>
@@ -42,11 +41,10 @@
         }
 
         function fadeOut(element, duration, delay) {
-            var start = null;
             function step(timestamp) {
+                var start = null;
                 if (!start) start = timestamp;
                 var progress = timestamp - start;
-                /*if ($('#covermovie').load)*//*working on .then type functions*/
                 if (progress < delay) {
                     requestAnimationFrame(step);
                     return;
@@ -61,7 +59,7 @@
             requestAnimationFrame(step);
         }
         for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 5000, 3000);
+            fadeOut(postload[k], 1000, 2000);
         }
     });
 </script>
@@ -75,13 +73,24 @@
 
 
 
-async function for loading movie = start fade when movie loads
 
 
 
 
-<!--text area-->
-<!--menu popup hamburger on scroll that is fixed position and takes you to the selected section like it's a shortcut-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
