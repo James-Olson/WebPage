@@ -39,13 +39,13 @@ body::-webkit-scrollbar {
 
 #curtain {
     position: absolute;
-    /*opacity: 1;*/
-    /*animation-delay: .5s;
-    animation: fade 3.5s ease-out;*/
+/*    opacity: 1;
+    animation-delay: 1s;
+    animation: fade 2s ease-out;*/
     height: 100%;
     width: 100%;
     z-index: 3;
-    background-color:Coral
+    /*background-color:Coral*/
 
 }
 
@@ -87,6 +87,12 @@ body::-webkit-scrollbar {
     background-position: bottom left 20%;
     background-size: 100% calc(var(--thickness)*2);
 }
+
+/*@keyframes fade {
+    0% { opacity: 1; background-color:Coral;}
+    50% { opacity: 1; background-color:Coral;}
+    100% { opacity: 0; background-color: transparent;}
+}*/
 
 @keyframes moveLeft {
     0% {
