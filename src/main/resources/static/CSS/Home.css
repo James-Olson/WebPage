@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 
 #james {
     font-size: 280px;
-    animation: moveLeft 2s linear forwards;
+    animation: moveLeft 1s linear forwards;
     animation-delay: 2s;
     text-align: center;
     position: absolute;
@@ -111,20 +111,6 @@ body::-webkit-scrollbar {
         transform: translateX(13%);
     }
 }
-
-/*@keyframes fade {
-    0% { opacity: 1; background-color:Coral;}
-    15% { opacity: 1; background-color:Coral;}
-    100% { opacity: 0; background-color: transparent;}
-}*/
-
-/*#curtainloader{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: coral;
-    z-index: 3;
-}*/
 
 
 
