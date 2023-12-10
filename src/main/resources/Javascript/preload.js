@@ -23,6 +23,6 @@
             requestAnimationFrame(step);
         }
         for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 1000, 2000);
+            fadeOut(postload[k], 3000, 2000);
         }
     });

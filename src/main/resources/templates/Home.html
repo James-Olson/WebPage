@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Olson</title>
-    <!--<script defer src="/Javascript/preload.js"></script>-->
+    <!--<script src="/Javascript/preload.js"></script>-->
     <link rel="stylesheet" th:href="@{/CSS/Home.css}" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
@@ -16,7 +16,6 @@
 <video class="preload" id="covermovie" loop autoplay muted>
     <source th:src='@{/img/FinalCut.mp4}' type="video/mp4">
 </video>
-<!--<div class="postload" id="curtain"></div>-->
 <div class="child" id="james">James</div>
 <div class="child" id="olson">Olson</div>
 
@@ -36,48 +35,39 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+/*    document.addEventListener('DOMContentLoaded', function () {
         var postload = document.querySelectorAll('.postload');
-        postload.style.display});
-
-        // Set initial opacity for elements with class 'postload'
-/*        for (var j = 0; j < postload.length; j++) {
-            postload[j].style.opacity = 1;
-        }
-
-        function fadeOut(element, duration, delay) {
-            var start = null;
-
-            function step(timestamp) {
-                if (!start) start = timestamp;
-
-                var progress = timestamp - start;
-
-                // Introduce a delay before starting the fade-out
-                if (progress < delay) {
-                    requestAnimationFrame(step);
-                    return;
-                }
-
-                // Adjust the percentage of opacity based on your preference
-                var opacityPercentage = Math.min((progress - delay) / duration, 1);
-
-                // Calculate the actual opacity (from 1 to 0) based on the percentage
-                element.style.opacity = 1 - opacityPercentage;
-
-                if (progress < (delay + duration)) {
-                    requestAnimationFrame(step);
-                }
-            }
-
-            requestAnimationFrame(step);
-        }
-
-        // Trigger fade-out for elements with class 'postload' after a delay of 10000ms
-        for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 5000, 5000); // Adjust the duration and delay as needed (in milliseconds)
-        }
+        postload.style.display
     });*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    var postload = document.querySelectorAll('.postload');
+    for (var j = 0; j < postload.length; j++) {
+        postload[j].style.opacity = 1;
+    }
+
+    function fadeOut(element, duration, delay) {
+        var start = null;
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            var progress = timestamp - start;
+            if (progress < delay) {
+                requestAnimationFrame(step);
+                return;
+            }
+            var opacityPercentage = Math.min((progress - delay) / duration, 1);
+            element.style.opacity = 1 - opacityPercentage;
+            if (progress < (delay + duration)) {
+                requestAnimationFrame(step);
+            }
+        }
+
+        requestAnimationFrame(step);
+    }
+    for (var k = 0; k < postload.length; k++) {
+        fadeOut(postload[k], 3000, 2000);
+    }
+});
 
 </script>
 
