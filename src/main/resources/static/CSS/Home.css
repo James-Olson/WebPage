@@ -39,9 +39,9 @@ body::-webkit-scrollbar {
 
 #curtain {
     position: absolute;
-/*    opacity: 1;
+    opacity: 1;
     animation-delay: 1s;
-    animation: fade 2s ease-out;*/
+    animation: fade 2s ease-out;
     height: 100%;
     width: 100%;
     z-index: 3;
