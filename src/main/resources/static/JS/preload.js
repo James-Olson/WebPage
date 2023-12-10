@@ -1,4 +1,4 @@
-    document.addEventListener('DOMContentLoaded', function () {
+/*    document.addEventListener('DOMContentLoaded', function () {
         var postload = document.querySelectorAll('.postload');
         for (var j = 0; j < postload.length; j++) {
             postload[j].style.opacity = 1;
@@ -23,6 +23,8 @@
             requestAnimationFrame(step);
         }
         for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 3000, 2000);
+            fadeOut(postload[k], 3000, 10000);
         }
-    });
+    });*/
+
+console.log("hello");
