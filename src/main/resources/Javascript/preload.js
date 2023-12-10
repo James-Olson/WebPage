@@ -1,4 +1,3 @@
-/*
     document.addEventListener('DOMContentLoaded', function () {
         var postload = document.querySelectorAll('.postload');
         for (var j = 0; j < postload.length; j++) {
@@ -26,4 +25,4 @@
         for (var k = 0; k < postload.length; k++) {
             fadeOut(postload[k], 1000, 2000);
         }
-    });*/
+    });
