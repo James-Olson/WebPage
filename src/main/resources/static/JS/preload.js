@@ -1,30 +1,29 @@
-/*    document.addEventListener('DOMContentLoaded', function () {
-        var postload = document.querySelectorAll('.postload');
-        for (var j = 0; j < postload.length; j++) {
-            postload[j].style.opacity = 1;
-        }
+document.addEventListener('DOMContentLoaded', function () {
+    var postload = document.querySelector('.postload');
+    {
+        postload.style.opacity = 1;
+    }
 
-        function fadeOut(element, duration, delay) {
-            var start = null;
-            function step(timestamp) {
-                if (!start) start = timestamp;
-                var progress = timestamp - start;
-                if (progress < delay) {
-                    requestAnimationFrame(step);
-                    return;
-                }
-                var opacityPercentage = Math.min((progress - delay) / duration, 1);
-                element.style.opacity = 1 - opacityPercentage;
-                if (progress < (delay + duration)) {
-                    requestAnimationFrame(step);
-                }
+    function fadeOut(element, duration, delay) {
+        var start = null;
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            var progress = timestamp - start;
+            if (progress < delay) {
+                requestAnimationFrame(step);
+                return;
             }
-
-            requestAnimationFrame(step);
+            var opacityPercentage = Math.min((progress - delay) / duration, 1);
+            element.style.opacity = 1 - opacityPercentage;
+            if (progress < (delay + duration)) {
+                requestAnimationFrame(step);
+            }
         }
-        for (var k = 0; k < postload.length; k++) {
-            fadeOut(postload[k], 3000, 10000);
-        }
-    });*/
 
-console.log("hello");
+        requestAnimationFrame(step);
+    }
+
+    fadeOut(postload, 3000, 5000);
+});
+
