@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var postload = document.querySelector('.postload');
+    var curtain = document.querySelector('#curtain');
     {
-        postload.style.opacity = 1;
+        curtain.style.opacity = 1;
     }
 
     function fadeOut(element, duration, delay) {
@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
-    fadeOut(postload, 3000, 5000);
+    fadeOut(curtain, 3000, 5000);
 });
 
