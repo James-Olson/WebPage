@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
-    fadeOut(curtain, 3000, 5000);
+    fadeOut(curtain, 3000, 2000);
 });
 
