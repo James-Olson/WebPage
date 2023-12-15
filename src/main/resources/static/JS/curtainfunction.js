@@ -1,13 +1,3 @@
-/*document.addEventListener('DOMContentLoaded', function () {
-    var curtain = document.querySelector('#curtain');
-    {
-        curtain.style.opacity = 1;
-    }*/
-
-/*function first(){
-    document.curtain.style.opacity = 1;
-}*/
-
 var curtain = document.querySelector('#curtain')
 function fadeOut(curtain, duration, delay) {
     var start = null;

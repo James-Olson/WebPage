@@ -46,9 +46,6 @@ body::-webkit-scrollbar {
 
 #curtain {
     position: absolute;
-    /*opacity: 1;*/
-/*    animation-delay: 2s;
-    animation: fade 3s ease-out;*/
     height: 100%;
     width: 100%;
     z-index: 3;
@@ -90,20 +87,6 @@ body::-webkit-scrollbar {
     background-position: bottom left 20%;
     background-size: 100% calc(var(--thickness)*2);
 }
-
-/*@keyframes fade {
-    0% { opacity: 1; background-color:Coral;}
-    10% { opacity: .9; background-color:Coral;}
-    20% { opacity: .8; background-color:Coral;}
-    30% { opacity: .7; background-color:Coral;}
-    40% { opacity: .6; background-color:Coral;}
-    50% { opacity: .5; background-color:Coral;}
-    60% { opacity: .4; background-color:Coral;}
-    70% { opacity: .3; background-color:Coral;}
-    80% { opacity: .2; background-color:Coral;}
-    90% { opacity: .1; background-color:Coral;}
-    100% { opacity: 0; background-color: transparent;}
-}*/
 
 @keyframes moveLeft {
     0% {
