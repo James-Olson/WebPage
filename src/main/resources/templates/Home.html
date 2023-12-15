@@ -43,11 +43,25 @@
 </div>
 
 <script>
+
+    /* XXX will equal whatever the media query is current */
+
+
+    var aboutme1 = document.querySelector('#aboutme')
+
+    var width1 = document.querySelector('.aboutmetextspan')
+
+
+
     window.addEventListener("scroll", function () {
+        width1.style.height = 10;
         var measurment = window.scrollY;
+        console.log(measurment)
 
         function scrollText(measurment) {
+            if(measurment=XXX){
 
+            }
 
         }
 
