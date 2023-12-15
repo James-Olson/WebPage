@@ -6,6 +6,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.text{
+    width: 20px;
+    color: black;
+}
+
 #landingcontainer1 {
     display: block;
     position: static;
@@ -60,37 +65,27 @@ body::-webkit-scrollbar {
 }
 
 #aboutme {
-/*    background-image: url('/img/IMG_0423 copy.PNG');
-    background-repeat: no-repeat;
+   /*background-image: url('https://www.cgteam.com/wp-content/uploads/2018/11/Profile_avatar_placeholder_large.png');*/
+    /*background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;*/
     display: block;
     position: static;
     width: 100vh;
     height: 100vh;
-    --thickness: 18px;
 }
 
 #aboutmetext {
     display: block;
     font-size: 30px;
     margin-left: 175px;
-    /*width: 50%;
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkgray;
-    border-radius: 10px;
-    text-align: center;*/
-/*    background-position: center left;
-    background-size: 100% var(--thickness);
-    background-image: linear-gradient(to top, black, white);
-    padding-bottom: var(--thickness);*/
 }
 
-/*#aboutmetext:hover {
-    background-position: bottom left 20%;
-    background-size: 100% calc(var(--thickness) * 2);
-}*/
+.aboutmetextspan{
+    background-color:black;
+    /*width:;*/
+    height:10px;
+}
 
 i {
     animation: iconsMoveRight 1s linear forwards;
