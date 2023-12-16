@@ -23,7 +23,7 @@
     </div>
     <div id="aboutme">
         <span id="aboutmetext"><span class="aboutmetextspan">As a software engineer my experience in programming languages,</span>
-            <span class="aboutmetextspan">libraries, frameworks and
+<!--            <span class="aboutmetextspan">libraries, frameworks and
             database management systems allows me</span><span class="aboutmetextspan"> to efficiently develop practical data flow sequences. Utilizing
             full-stack</span><span
                     class="aboutmetextspan"> web development talent I complete the developer task,</span><span
@@ -31,7 +31,7 @@
             and to work collaboratively</span><span
                     class="aboutmetextspan"> makes me a valuable asset to a software development team. I look</span><span
                     class="aboutmetextspan"> forward to
-            delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>
+            delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>-->
         </span>
         <!--        <span id="icons">
                     <i class="fa-brands fa-github fa-2xl"></i>
@@ -52,18 +52,18 @@
     var width1 = document.querySelector('.aboutmetextspan')
 
 
-
     window.addEventListener("scroll", function () {
-        width1.style.height = 10;
+        width1.style.backgroundColor = 'white';
         var measurment = window.scrollY;
         console.log(measurment)
 
-        function scrollText(measurment) {
-            if(measurment=XXX){
-
+        function scrollText() {
+            if (measurment > 240) {
+                width1.style.backgroundColor = 'black';
             }
 
         }
+        scrollText()
 
 
     });

@@ -82,9 +82,10 @@ body::-webkit-scrollbar {
 }
 
 .aboutmetextspan{
-    background-color:black;
+    /*background-color:black;*/
+    /*transition: ;*/
     /*width:;*/
-    height:10px;
+    /*height:10px;*/
 }
 
 i {
