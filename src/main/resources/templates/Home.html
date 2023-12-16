@@ -23,57 +23,63 @@
     </div>
     <div id="aboutme">
         <span id="aboutmetext"><span class="aboutmetextspan">As a software engineer my experience in programming languages,</span>
-<!--            <span class="aboutmetextspan">libraries, frameworks and
-            database management systems allows me</span><span class="aboutmetextspan"> to efficiently develop practical data flow sequences. Utilizing
-            full-stack</span><span
-                    class="aboutmetextspan"> web development talent I complete the developer task,</span><span
-                    class="aboutmetextspan"> entirely independent. An ability to lead
-            and to work collaboratively</span><span
-                    class="aboutmetextspan"> makes me a valuable asset to a software development team. I look</span><span
-                    class="aboutmetextspan"> forward to
-            delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>-->
+            <!--            <span class="aboutmetextspan">libraries, frameworks and
+                        database management systems allows me</span><span class="aboutmetextspan"> to efficiently develop practical data flow sequences. Utilizing
+                        full-stack</span><span
+                                class="aboutmetextspan"> web development talent I complete the developer task,</span><span
+                                class="aboutmetextspan"> entirely independent. An ability to lead
+                        and to work collaboratively</span><span
+                                class="aboutmetextspan"> makes me a valuable asset to a software development team. I look</span><span
+                                class="aboutmetextspan"> forward to
+                        delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>-->
         </span>
-                <span id="icons">
-                    <img id="giticon" th:src='@{/img/githubicon.png}'>
-                    <video id="emailicon" th:src='@{/img/emailicon.mp4}' type="video/mp4" loop autoplay muted></video>
-                    <img id="resumeicon" th:src='@{/img/resumeicon.png}'>
-                    <a id="linkediniconanchor" href="https://www.google.com/"><img id="linkedinicon" th:src='@{/img/linkedin.png}' ></a>
+        <span id="icons">
+                   <a id="giticonanchor" href="https://www.google.com/"> <img id="giticon"
+                                                                              th:src='@{/img/githubicon.png}'></a>
+                   <a id="emailiconanchor" href="https://www.google.com/"> <video id="emailicon"
+                                                                                  th:src='@{/img/emailicon.mp4}'
+                                                                                  type="video/mp4" loop autoplay
+                                                                                  muted></video></a>
+                    <a id="resumeiconanchor" href="https://www.google.com/"><img id="resumeicon"
+                                                                                 th:src='@{/img/resumeicon.png}'></a>
+                    <a id="linkediniconanchor" href="https://www.google.com/"><img id="linkedinicon"
+                                                                                   th:src='@{/img/linkedin.png}'></a>
                 </span>
     </div>
 </div>
 
 <script>
 
-    /* XXX will equal whatever the media query is current */
 
-
-    var aboutme1 = document.querySelector('#aboutme')
-
-    var width1 = document.querySelector('.aboutmetextspan')
-
+    var width1 = document.querySelector(".aboutmetextspan");
 
     window.addEventListener("scroll", function () {
-        width1.style.backgroundColor = 'white';
-        var measurment = window.scrollY;
-        console.log(measurment)
+        width1.style.height = Heightnow + "px";
+        let measurement = window.scrollY;
+        console.log(measurement);
 
         function scrollText() {
-            if (measurment > 240) {
-                width1.style.backgroundColor = 'black';
-            }
+            while (Heightnow > 0 && measurement )
+                statement
 
         }
-        scrollText()
+        });
+/*            for (let measurement = window.scrollY ; measurement > 0; Heightnow -= 5) {
+                if (measurement > 240) {
+                }
+            }
+        }
 
 
-    });
+        scrollText();
+    });*/
+
+
 </script>
 
 
 <!--Dec 14th-->
 <!--projects page; flip up scroll light rushes toward user (enter door effect)-->
-
-
 
 
 <!--media Queries-->
