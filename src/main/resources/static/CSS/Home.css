@@ -81,6 +81,28 @@ body::-webkit-scrollbar {
     margin-left: 175px;
 }
 
+#emailicon{
+    height: 35px;
+    width: 40px;
+}
+
+#giticon{
+    height: 35px;
+    width: 40px;
+
+}
+
+#linkedinicon{
+    height: 35px;
+    width: 40px;
+}
+
+#resumeicon{
+    height: 35px;
+    width: 40px;
+}
+
+
 .aboutmetextspan{
     /*background-color:black;*/
     /*transition: ;*/
