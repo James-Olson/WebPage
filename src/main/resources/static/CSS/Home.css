@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -10,7 +12,7 @@ body::-webkit-scrollbar {
 #landingcontainer1 {
     display: block;
     position: static;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 
 }
@@ -28,6 +30,7 @@ body::-webkit-scrollbar {
     color: White;
     display: inline-block;
     padding-top: 41%;
+    user-select: none;
 }
 
 #james {
@@ -43,52 +46,50 @@ body::-webkit-scrollbar {
     color: White;
     display: inline-block;
     padding-top: 41%;
+    user-select: none;
 }
 
 #curtain {
     position: absolute;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     z-index: 3;
-    background-color: Coral;
+    /*background-color: #363945;*/
 }
 
 #covermovie {
     position: absolute;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     z-index: 2;
 }
 
 #aboutme {
    background-image: url('https://www.cgteam.com/wp-content/uploads/2018/11/Profile_avatar_placeholder_large.png');
-    /*background-repeat: no-repeat;*/
     background-size: cover;
     background-position: center center;
     display: block;
     position: static;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 }
 
 #aboutmetext {
-    /*display: block;*/
-    display: inline-block;
+    display: block;
     font-size: 30px;
     margin-left: 175px;
+    padding-top: 120px;
+    margin-right: 900px;
 }
 
 .aboutmetextspan{
-    /*background-color:black;*/
-    /*transition: ;*/
-    /*width:;*/
-    /*height:10px;*/
+
 }
 
 #icons {
     display: inline-block;
     animation: iconsMoveRight 1s linear forwards;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 #emailicon{
@@ -114,6 +115,8 @@ body::-webkit-scrollbar {
 #resumeicon{
     height: 65px;
     width: 65px;
+    background-color: gold;
+    background-size: 25px 25px;
 }
 
 @keyframes moveLeft {
@@ -148,7 +151,7 @@ body::-webkit-scrollbar {
         transform: translateX(.5%);
     }
     100% {
-        transform: translateX(30%);
+        transform: translateX(80%);
     }
 }
 

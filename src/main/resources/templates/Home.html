@@ -11,7 +11,9 @@
 </head>
 <body>
 <div id="landingcontainer1">
-    <span id="curtain"></span>
+    <!--<span id="curtain">-->
+        <img id="curtain" th:src='@{/img/Curtain003.jpg}'>
+    <!--</span>-->
     <video id="covermovie" loop autoplay muted>
         <source th:src='@{/img/CoverMovie.mp4}' type="video/mp4">
     </video>
@@ -31,36 +33,42 @@
                         delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>
         </span>
     <span id="icons">
-                   <a id="giticonanchor" href="https://www.google.com/"> <img id="giticon"
+                   <a id="giticonanchor" target="_blank" rel="noopener" href="https://www.google.com/"> <img id="giticon"
                                                                               th:src='@{/img/githubicon.png}'></a>
-                   <a id="emailiconanchor" href="https://www.google.com/"> <video id="emailicon"
+                   <a id="emailiconanchor" target="_blank" rel="noopener" href="https://www.google.com/"> <video id="emailicon"
                                                                                   th:src='@{/img/emailicon.mp4}'
                                                                                   type="video/mp4" loop autoplay
                                                                                   muted></video></a>
-                    <a id="linkediniconanchor" href="https://www.google.com/"><img id="linkedinicon"
+                    <a id="linkediniconanchor" target="_blank" rel="noopener" href="https://www.google.com/"><img id="linkedinicon"
                                                                                    th:src='@{/img/linkedin.png}'></a>
-            <a id="resumeiconanchor" href="https://www.google.com/"><img id="resumeicon"
+            <a id="resumeiconanchor" target="_blank" rel="noopener" href="https://www.google.com/"><img id="resumeicon"
                                                                          th:src='@{/img/resumeicon.png}'></a>
                 </span>
 </div>
 
 
-<!--color of curtain finish-->
 <!--view and download resume finish (popup that says "view my resume with the option of download") finish-->
-<!--about me text finish-->
-
-
-<!--icons finish-->
 <!--motion blur on git icon-->
 <!--resume light sweep-->
+<!--linkedin jump/shake reset fade keyframe-->
+<!--email just round edges-->
+
+
 
 
 <!-- EVERYTHING LEFT -->
-
+<!--about me text finish-->
 <!--projects page-->
 <!--selfie-->
 <!--media Queries-->
 <!--name position glitch-->
+<!--small white border in movie-->
+<!--window.load.lock.scroll-->
+
+
+
+
+
 <script type="text/javascript" th:src="@{/JS/curtainfunction.js}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
