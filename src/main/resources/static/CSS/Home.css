@@ -1,14 +1,10 @@
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-.text{
-    width: 20px;
-    color: black;
 }
 
 #landingcontainer1 {
@@ -51,24 +47,24 @@ body::-webkit-scrollbar {
 
 #curtain {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vh;
     z-index: 3;
     background-color: Coral;
 }
 
 #covermovie {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     z-index: 2;
 }
 
 #aboutme {
-   /*background-image: url('https://www.cgteam.com/wp-content/uploads/2018/11/Profile_avatar_placeholder_large.png');*/
-    /*background-repeat: no-repeat;
+   background-image: url('https://www.cgteam.com/wp-content/uploads/2018/11/Profile_avatar_placeholder_large.png');
+    /*background-repeat: no-repeat;*/
     background-size: cover;
-    background-position: center center;*/
+    background-position: center center;
     display: block;
     position: static;
     width: 100vh;
@@ -76,43 +72,48 @@ body::-webkit-scrollbar {
 }
 
 #aboutmetext {
-    display: block;
+    /*display: block;*/
+    display: inline-block;
     font-size: 30px;
     margin-left: 175px;
 }
 
-#emailicon{
-    height: 35px;
-    width: 40px;
-}
-
-#giticon{
-    height: 35px;
-    width: 40px;
-
-}
-
-#linkedinicon{
-    height: 35px;
-    width: 40px;
-}
-
-#resumeicon{
-    height: 35px;
-    width: 40px;
-}
-
-
 .aboutmetextspan{
-    background-color:black;
+    /*background-color:black;*/
     /*transition: ;*/
     /*width:;*/
     /*height:10px;*/
 }
 
-i {
+#icons {
+    display: inline-block;
     animation: iconsMoveRight 1s linear forwards;
+    margin-top: 100px;
+}
 
+#emailicon{
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+}
+
+#giticon{
+    height: 70px;
+    width: 70px;
+    margin-right: 25px;
+}
+
+#linkedinicon{
+    height: 70px;
+    width: 70px;
+    margin-right: 25px;
+}
+
+#resumeicon{
+    height: 65px;
+    width: 65px;
 }
 
 @keyframes moveLeft {

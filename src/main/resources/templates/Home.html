@@ -6,82 +6,59 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Olson</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" th:href="@{/CSS/Home.css}" type="text/css">
-    <script src="https://kit.fontawesome.com/43d20c2690.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div id="overalldiv">
-    <div id="landingcontainer1">
-        <span id="curtain"></span>
-        <video id="covermovie" loop autoplay muted>
-            <source th:src='@{/img/FinalCut.mp4}' type="video/mp4">
-        </video>
-        <span id="james">James</span>
-        <span id="olson">Olson</span>
-    </div>
-    <div id="aboutme">
+<div id="landingcontainer1">
+    <span id="curtain"></span>
+    <video id="covermovie" loop autoplay muted>
+        <source th:src='@{/img/CoverMovie.mp4}' type="video/mp4">
+    </video>
+    <span id="james">James</span>
+    <span id="olson">Olson</span>
+</div>
+<div id="aboutme">
         <span id="aboutmetext"><span class="aboutmetextspan">As a software engineer my experience in programming languages,</span>
-            <!--            <span class="aboutmetextspan">libraries, frameworks and
+                        <span class="aboutmetextspan">libraries, frameworks and
                         database management systems allows me</span><span class="aboutmetextspan"> to efficiently develop practical data flow sequences. Utilizing
                         full-stack</span><span
-                                class="aboutmetextspan"> web development talent I complete the developer task,</span><span
-                                class="aboutmetextspan"> entirely independent. An ability to lead
+                    class="aboutmetextspan"> web development talent I complete the developer task,</span><span
+                    class="aboutmetextspan"> entirely independent. An ability to lead
                         and to work collaboratively</span><span
-                                class="aboutmetextspan"> makes me a valuable asset to a software development team. I look</span><span
-                                class="aboutmetextspan"> forward to
-                        delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>-->
+                    class="aboutmetextspan"> makes me a valuable asset to a software development team. I look</span><span
+                    class="aboutmetextspan"> forward to
+                        delivering innovative software for the most meaningful</span><span class="aboutmetextspan"> reason.</span>
         </span>
-        <span id="icons">
+    <span id="icons">
                    <a id="giticonanchor" href="https://www.google.com/"> <img id="giticon"
                                                                               th:src='@{/img/githubicon.png}'></a>
                    <a id="emailiconanchor" href="https://www.google.com/"> <video id="emailicon"
                                                                                   th:src='@{/img/emailicon.mp4}'
                                                                                   type="video/mp4" loop autoplay
                                                                                   muted></video></a>
-                    <a id="resumeiconanchor" href="https://www.google.com/"><img id="resumeicon"
-                                                                                 th:src='@{/img/resumeicon.png}'></a>
                     <a id="linkediniconanchor" href="https://www.google.com/"><img id="linkedinicon"
                                                                                    th:src='@{/img/linkedin.png}'></a>
+            <a id="resumeiconanchor" href="https://www.google.com/"><img id="resumeicon"
+                                                                         th:src='@{/img/resumeicon.png}'></a>
                 </span>
-    </div>
 </div>
 
-<script>
+
+<!--color of curtain finish-->
+<!--view and download resume finish (popup that says "view my resume with the option of download") finish-->
+<!--about me text finish-->
 
 
-    var width1 = document.querySelector(".aboutmetextspan");
-
-    window.addEventListener("scroll", function () {
-        width1.style.height = Heightnow + "px";
-        let measurement = window.scrollY;
-        console.log(measurement);
-
-        function scrollText() {
-            while (Heightnow > 0 && measurement )
-                statement
-
-        }
-        });
-/*            for (let measurement = window.scrollY ; measurement > 0; Heightnow -= 5) {
-                if (measurement > 240) {
-                }
-            }
-        }
+<!--icons finish-->
+<!--motion blur on git icon-->
+<!--resume light sweep-->
 
 
-        scrollText();
-    });*/
+<!-- EVERYTHING LEFT -->
 
-
-</script>
-
-
-<!--Dec 14th-->
-<!--projects page; flip up scroll light rushes toward user (enter door effect)-->
-
-
+<!--projects page-->
+<!--selfie-->
 <!--media Queries-->
 <!--name position glitch-->
 <script type="text/javascript" th:src="@{/JS/curtainfunction.js}"></script>
