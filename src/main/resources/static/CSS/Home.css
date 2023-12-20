@@ -14,7 +14,6 @@ body::-webkit-scrollbar {
     position: static;
     width: 100vw;
     height: 100vh;
-
 }
 
 #olson {
@@ -54,7 +53,6 @@ body::-webkit-scrollbar {
     height: 100vh;
     width: 100vw;
     z-index: 3;
-    /*background-color: #363945;*/
 }
 
 #covermovie {
@@ -89,34 +87,58 @@ body::-webkit-scrollbar {
 #icons {
     display: inline-block;
     animation: iconsMoveRight 1s linear forwards;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 #emailicon{
-    height: 80px;
-    width: 80px;
-    border-radius: 20px;
-    margin-right: 25px;
-    margin-bottom: 0px;
+    height: 150px;
+    width: 150px;
+    margin-right: 40px;
 }
 
 #giticon{
-    height: 70px;
-    width: 70px;
-    margin-right: 25px;
+    height: 80px;
+    width: 80px;
+    margin-right: 40px;
 }
 
 #linkedinicon{
-    height: 70px;
-    width: 70px;
-    margin-right: 25px;
+    height: 80px;
+    width: 80px;
+    margin-right: 40px;
+    animation: none;
 }
 
 #resumeicon{
-    height: 65px;
+    height: 75px;
     width: 65px;
-    background-color: gold;
-    background-size: 25px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#githubdot {
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
+    /*opacity: 100%;*/
+}
+
+#linkedindot {
+    height: 90px;
+    width: 90px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
+    animation: LinkedIconBackground 7s infinite;
+}
+
+#line{
+    animation: ResumeWriting 5s linear forwards;
+    color: black;
 }
 
 @keyframes moveLeft {
@@ -151,10 +173,43 @@ body::-webkit-scrollbar {
         transform: translateX(.5%);
     }
     100% {
-        transform: translateX(80%);
+        transform: translateX(60%);
     }
 }
 
+@keyframes LinkedIconBackground {
+    0% {
+        opacity: 0%;
+    }
+
+    25% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes ResumeWriting{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 4%;
+    }
+
+
+}
 
 
 
