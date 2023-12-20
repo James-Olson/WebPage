@@ -3,6 +3,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -105,6 +106,7 @@ body::-webkit-scrollbar {
 #linkedinicon{
     height: 80px;
     width: 80px;
+    margin-bottom: 5px;
     margin-right: 40px;
     animation: none;
 }
@@ -113,8 +115,10 @@ body::-webkit-scrollbar {
     height: 75px;
     width: 65px;
     background-color: white;
-    border-radius: 10px;
+    border-width: 0 10px 10px 0;
+    border-radius: 10px 20px 10px 10px;
 }
+
 
 #githubdot {
     height: 80px;
@@ -136,9 +140,16 @@ body::-webkit-scrollbar {
     animation: LinkedIconBackground 7s infinite;
 }
 
-#line{
+.ResumeWriting{
     animation: ResumeWriting 5s linear forwards;
-    color: black;
+    background-color: black;
+    height: 5px;
+    border-radius: 4px;
+    margin-left: 100px;
+}
+
+#GitLine{
+
 }
 
 @keyframes moveLeft {
@@ -205,7 +216,7 @@ body::-webkit-scrollbar {
     }
 
     100% {
-        width: 4%;
+        width: 5%;
     }
 
 
