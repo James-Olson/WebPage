@@ -23,7 +23,7 @@ function fadeOut(curtain, duration, delay) {
 }
 var curtain = document.querySelector('#curtain');
 
-fadeOut(curtain, 3000, 2000).then(() => {
+fadeOut(curtain, 2000, 1000).then(() => {
     document.body.style.overflowY = "visible";
 });
 
