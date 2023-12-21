@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class TestingController {
-
     @GetMapping ("Test")
-    public String Test(){return "EmailForm";}
+    public String Test() {return "EmailForm";}
 }
