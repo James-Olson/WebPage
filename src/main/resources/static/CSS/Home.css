@@ -79,6 +79,7 @@ body::-webkit-scrollbar {
     margin-left: 175px;
     padding-top: 120px;
     margin-right: 900px;
+    user-select: none;
 }
 
 .aboutmetextspan{
@@ -223,8 +224,9 @@ body::-webkit-scrollbar {
 
 #nameheading{
     font-family: Didot, serif;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 200px;
+    user-select: none;
 }
 
 #namecontainer{
@@ -240,22 +242,39 @@ body::-webkit-scrollbar {
 #respondheading{
     font-family: Didot, serif;
     margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 40%;
+    user-select: none;
+
 }
 
 #phonenumbercontainer{
     display: inline-block;
     width: 25%;
-    margin-left: 5px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: #B33F40;
+    border-radius: 25px;
+    text-align: center;
 }
 
 #emailcontainer{
     display: inline-block;
     width: 25%;
+    height: 300px;
     margin-left: 20%;
+    background-color: #B33F40;
+    border-radius: 25px;
+    text-align: center;
 }
 
 #emailinputlabel{
+    font-size: 23px;
     font-family: Didot, serif;
+    padding-top: 20px;
+    display: inline-block;
+    user-select: none;
+    padding-bottom: 25px;
 }
 
 #emailinput{
@@ -263,10 +282,39 @@ body::-webkit-scrollbar {
 }
 
 #phonenumberinputlabel{
+    font-size: 23px;
     font-family: Didot, serif;
+    padding-top: 50px;
+    display: inline-block;
+    user-select: none;
+    padding-bottom: 15px;
+
 }
 
 #phonenumberinput{
     font-family: Didot, serif;
+}
+
+#helpheading{
+    font-family: Didot, serif;
+    margin-top: 100px;
+    margin-left: 40%;
+    user-select: none;
+}
+
+#namedot {
+    height: 600px;
+    width: 600px;
+    background-color: #92A8D1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.half-circle {
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    background-color: red;
+    margin-left: 0;
 }
 
