@@ -11,7 +11,9 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<div class="half-circle"></div>
+<div>
+    <span id="half-circle"><p>copy and paste my email: jamesolson377@gmail.com</span>
+</div>
 <form>
     <h1 id="nameheading">What can I call you?</h1>
     <div id="namecontainer">
@@ -22,13 +24,13 @@
     </div>
     <h1 id="respondheading">How can I respond to you?</h1>
     <div id="emailcontainer">
-        <div class="form-group">
+        <div class="form-group" id="emailcontainerwidth">
             <label for="emailinput" id="emailinputlabel">Whats your email address?</label>
             <input type="email" class="form-control" id="emailinput" placeholder="Ex. johndoe36@yahoo.com">
         </div>
     </div>
     <div id="phonenumbercontainer">
-        <div class="form-group">
+        <div class="form-group" id="phonenumbercontainerwidth">
             <label for="phonenumberinput" id="phonenumberinputlabel">Whats your telephone number?</label>
             <input type="text" class="form-control" id="phonenumberinput" placeholder="Ex. (555) 555-4800">
         </div>
@@ -39,17 +41,11 @@
             <input class="form-control" id="helpinput">
         </div>
     </div>
-</form>
-
-
-
-
-
-
-<form>
-    <div class="form-group">
-        <label for="offerinput">Have an offer?</label>
-        <input type="file" class="form-control-file" id="offerinput">
+    <div>
+        <div class="form-group">
+            <label for="offerinput">Have an offer?</label>
+            <input type="file" class="form-control-file" id="offerinput">
+        </div>
     </div>
 </form>
 
