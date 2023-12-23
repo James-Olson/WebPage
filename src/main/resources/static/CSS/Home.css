@@ -245,7 +245,6 @@ body::-webkit-scrollbar {
     margin-bottom: 55px;
     margin-left: 40%;
     user-select: none;
-
 }
 
 #phonenumbercontainer{
@@ -258,6 +257,11 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+#phonenumbercontainerwidth{
+    width: 75%;
+    display: inline-block;
+}
+
 #emailcontainer{
     display: inline-block;
     width: 25%;
@@ -266,6 +270,11 @@ body::-webkit-scrollbar {
     background-color: #B33F40;
     border-radius: 25px;
     text-align: center;
+}
+
+#emailcontainerwidth{
+    width: 75%;
+    display: inline-block;
 }
 
 #emailinputlabel{
@@ -284,37 +293,31 @@ body::-webkit-scrollbar {
 #phonenumberinputlabel{
     font-size: 23px;
     font-family: Didot, serif;
-    padding-top: 50px;
+    padding-top: 20px;
     display: inline-block;
     user-select: none;
-    padding-bottom: 15px;
-
+    padding-bottom: 25px;
 }
 
 #phonenumberinput{
     font-family: Didot, serif;
 }
 
-#helpheading{
+#helpheading {
     font-family: Didot, serif;
     margin-top: 100px;
     margin-left: 40%;
     user-select: none;
 }
 
-#namedot {
-    height: 600px;
-    width: 600px;
+#half-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 0px 0px 0px 500px;
     background-color: #92A8D1;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.half-circle {
-    width: 200px;
-    height: 100px;
-    border-radius: 100px 100px 0 0;
-    background-color: red;
-    margin-left: 0;
+    margin-top: 0px;
+    right: 0px;
+    display: block;
 }
 
