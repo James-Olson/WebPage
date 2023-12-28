@@ -65,7 +65,6 @@ body::-webkit-scrollbar {
 }
 
 #aboutme {
-   background-image: url('https://www.cgteam.com/wp-content/uploads/2018/11/Profile_avatar_placeholder_large.png');
     background-size: cover;
     background-position: center center;
     display: block;
@@ -73,13 +72,19 @@ body::-webkit-scrollbar {
     width: 100vw;
     height: 100vh;
 }
+#Selfie{
+    margin-left: 0px;
+    display:inline-block;
+    height: 800px;
+    width: 400px;
+}
 
 #aboutmetext {
-    display: block;
+    display: inline-block;
     font-size: 30px;
     margin-left: 175px;
-    padding-top: 120px;
-    margin-right: 900px;
+/*    padding-top: 120px;
+    margin-right: 900px;*/
     user-select: none;
 }
 
