@@ -88,73 +88,70 @@ body::-webkit-scrollbar {
     user-select: none;
 }
 
-#icons {
+/*#icons {
     display: inline-block;
     animation: iconsMoveRight 1s linear forwards;
     margin-top: 120px;
+}*/
+
+#iconcontainer{
+    display: block;
+    margin-top: 120px;
 }
 
-#emailicon{
-    height: 150px;
-    width: 150px;
-    margin-right: 40px;
+ul {
+    margin:0;
+    padding:0;
+    /*display:flex;*/
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
-#giticon{
-    height: 80px;
-    width: 80px;
-    margin-right: 40px;
+ul li {
+    list-style:none;
+    margin: 0 15px;
 }
 
-#linkedinicon{
-    height: 80px;
-    width: 80px;
-    margin-right: 40px;
-    animation: none;
-    padding-left: 5px;
-    padding-top: 5px;
-    animation-play-state: paused;
-}
-
-#resumeicon{
-    height: 75px;
-    width: 65px;
-    /*background-color: white;*/
-    /*border-width: 0 10px 10px 0;*/
-    /*border-radius: 10px 20px 10px 10px;*/
-}
-
-#githubdot {
-    height: 80px;
-    width: 80px;
-    background-color: black;
+ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #171515;
     border-radius: 50%;
-    display: inline-block;
-    margin-right: 40px;
-    animation: LinkedIconBackground 16s infinite;
-    /*opacity: 100%;*/
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
 }
 
-#linkedindot {
-    height: 90px;
-    width: 90px;
-    background-color: blue;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 40px;
-    animation: LinkedIconBackground 16s infinite;
+ul li a:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background: #d35400;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
 }
 
-#ResumeWriting{
-    animation: ResumeWriting 5s linear forwards;
-    background-color: black;
-    height: 5px;
-    border-radius: 4px;
-    /*margin-left: 100px;*/
+ul li a:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #d35400;
+    filter: blur(3px);
 }
 
-#BlueLine{
-
+ul li a:hover {
+    color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    text-shadow: 0 0 15px #d35400;
 }
 
 @keyframes moveLeft {
@@ -181,7 +178,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@keyframes iconsMoveRight {
+/*@keyframes iconsMoveRight {
     0% {
         transform: translateX(0%);
     }
@@ -191,36 +188,7 @@ body::-webkit-scrollbar {
     100% {
         transform: translateX(50%);
     }
-}
+}*/
 
-@keyframes LinkedIconBackground {
-    0% {
-        opacity: 0%;
-    }
 
-    25% {
-        opacity: 50%;
-    }
 
-    50% {
-        opacity: 100%;
-    }
-
-    75% {
-        opacity: 50%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-}
-
-@keyframes ResumeWriting{
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 5%;
-    }
-}
