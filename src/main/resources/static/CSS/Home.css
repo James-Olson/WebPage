@@ -65,31 +65,27 @@ body::-webkit-scrollbar {
 }
 
 #aboutme {
-    background-size: cover;
-    background-position: center center;
     display: block;
-    position: static;
     width: 100vw;
     height: 100vh;
 }
-#Selfie{
-    margin-left: 0px;
-    display:inline-block;
-    height: 800px;
-    width: 400px;
-}
 
-#aboutmetext {
-    display: inline-block;
-    font-size: 30px;
-    margin-left: 175px;
-/*    padding-top: 120px;
-    margin-right: 900px;*/
+#Selfie {
+    position: absolute;
+    left: 60%;
+    height: 70%;
+    width: 40%;
     user-select: none;
 }
 
-.aboutmetextspan{
-
+#aboutmetext {
+    display: block;
+    font-size: 30px;
+    margin-left: 175px;
+    padding-top: 120px;
+    margin-right: 650px;
+    line-height: 1.5;
+    user-select: none;
 }
 
 #icons {
@@ -113,17 +109,19 @@ body::-webkit-scrollbar {
 #linkedinicon{
     height: 80px;
     width: 80px;
-    margin-bottom: 5px;
     margin-right: 40px;
     animation: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    animation-play-state: paused;
 }
 
 #resumeicon{
     height: 75px;
     width: 65px;
-    background-color: white;
-    border-width: 0 10px 10px 0;
-    border-radius: 10px 20px 10px 10px;
+    /*background-color: white;*/
+    /*border-width: 0 10px 10px 0;*/
+    /*border-radius: 10px 20px 10px 10px;*/
 }
 
 #githubdot {
@@ -133,6 +131,7 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     display: inline-block;
     margin-right: 40px;
+    animation: LinkedIconBackground 16s infinite;
     /*opacity: 100%;*/
 }
 
@@ -143,18 +142,18 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     display: inline-block;
     margin-right: 40px;
-    animation: LinkedIconBackground 7s infinite;
+    animation: LinkedIconBackground 16s infinite;
 }
 
-.ResumeWriting{
+#ResumeWriting{
     animation: ResumeWriting 5s linear forwards;
     background-color: black;
     height: 5px;
     border-radius: 4px;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
 }
 
-#GitLine{
+#BlueLine{
 
 }
 
@@ -190,7 +189,7 @@ body::-webkit-scrollbar {
         transform: translateX(.5%);
     }
     100% {
-        transform: translateX(60%);
+        transform: translateX(50%);
     }
 }
 
