@@ -254,25 +254,9 @@ ul li {
     text-shadow: 0 0 15px #d35400;
 }
 
-#parallelogram {
-    width: 500px;
+#homeline{
+    width: 100vh;
     height: 200px;
-    transform: skew(30deg);
-    background: linear-gradient(90deg, rgba(128, 128, 128, 1) 225px, #add8e6 50px, rgba(128, 128, 128, 1) 225px);
-    background-size: 500px;
-    animation: shiningEffect 5s linear infinite;
-    margin-left: 110px;
-    margin-bottom: 0px;
-}
-
-
-@keyframes shiningEffect {
-    0% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: -100% 0;
-    }
 }
 
 @keyframes moveLeft {
