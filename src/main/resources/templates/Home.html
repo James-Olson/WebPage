@@ -30,16 +30,29 @@
                         delivering innovative software for the most meaningful reason.
     </span>
     <ul>
-        <li><a id="linkedin" href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/james-olson456/"><i
+                class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
         <li><a id="email" href="#"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
-        <li><a id="github" href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a id="github" target="_blank" href="https://github.com/James-Olson"><i class="fa-brands fa-github"
+                                                                                    aria-hidden="true"></i></a></li>
         <li><a id="file" href="#"><i class="fa-regular fa-file" aria-hidden="true"></i></a></li>
     </ul>
-        <div id="homeline">
-            <svg viewBox="0 0 1000 200">
-                <polyline points="0,5 600,5 800,105 800,200 " stroke="#696969" fill="white" stroke-width=".5"/>
-            </svg>
-        </div>
+    <div id="homelinecontainer">
+        <svg viewBox="0 0 1000 200" id="homelinecontainer">
+            <defs>
+                <linearGradient id="gradient1" x1="-600%" y2="600%">
+                    <stop offset="50%" style="stop-color: grey" />
+                    <stop offset="50%" style="stop-color: lightblue">
+                        <animate attributeName="offset" values="0.4;1" dur="10s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="50%" style="stop-color: gray" />
+                </linearGradient>
+            </defs>
+            <polyline points="0,5 150,5 300,5 300,5 450,5 600,5 800,105 800,200" id="homeline" stroke="url(#gradient1)" fill="white"
+                      stroke-width="1.5">
+            </polyline>
+        </svg>
+    </div>
 </div>
 
 
@@ -49,9 +62,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<!--DEC30th-->
-<!--view/download resume window-->
-<!--about me text-->
+<!--                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color: red" />
+                        <stop offset="40%" style="stop-color: red" />
+                        <stop offset="40%" style="stop-color: blue">
+                            <animate attributeName="offset" values="0;1" dur="5s" repeatCount="indefinite" />
+                        </stop>
+                        <stop offset="100%" style="stop-color: blue" />
+                    </linearGradient>-->
 
 
 </body>

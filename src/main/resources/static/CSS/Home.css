@@ -254,10 +254,16 @@ ul li {
     text-shadow: 0 0 15px #d35400;
 }
 
-#homeline{
+#homelinecontainer {
     width: 100vh;
     height: 200px;
 }
+
+#homeline {
+
+}
+
+
 
 @keyframes moveLeft {
     0% {
