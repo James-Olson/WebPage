@@ -158,7 +158,7 @@ ul li {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #d35400;
+    background: darkblue;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -166,14 +166,14 @@ ul li {
 
 #linkedin:hover:before {
     transform: scale(1.2);
-    box-shadow: 0 0 15px #d35400;
+    box-shadow: 0 0 15px darkblue;
     filter: blur(3px);
 }
 
 #linkedin:hover {
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    color: lightblue;
+    box-shadow: 0 0 15px darkblue;
+    text-shadow: 0 0 15px darkblue;
 }
 
 #email:before {
@@ -184,7 +184,7 @@ ul li {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #d35400;
+    background: green;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -192,14 +192,14 @@ ul li {
 
 #email:hover:before {
     transform: scale(1.2);
-    box-shadow: 0 0 15px #d35400;
+    box-shadow: 0 0 15px green;
     filter: blur(3px);
 }
 
 #email:hover {
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    color: lightgreen;
+    box-shadow: 0 0 15px green;
+    text-shadow: 0 0 15px green;
 }
 
 #github:before {
@@ -210,7 +210,7 @@ ul li {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #d35400;
+    background: purple;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -218,14 +218,14 @@ ul li {
 
 #github:hover:before {
     transform: scale(1.2);
-    box-shadow: 0 0 15px #d35400;
+    box-shadow: 0 0 15px purple;
     filter: blur(3px);
 }
 
 #github:hover {
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    color: #BF40BF;
+    box-shadow: 0 0 15px purple;
+    text-shadow: 0 0 15px purple;
 }
 
 #file:before {
@@ -254,16 +254,10 @@ ul li {
     text-shadow: 0 0 15px #d35400;
 }
 
-#homelinecontainer {
+.homelinecontainer {
     width: 100vh;
     height: 200px;
 }
-
-#homeline {
-
-}
-
-
 
 @keyframes moveLeft {
     0% {

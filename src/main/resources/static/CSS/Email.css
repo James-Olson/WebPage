@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
     top: 80px;
     left: 450px;
     user-select: none;
-    color: white;
+    color: black;
 }
 
 #namecontainer {
@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
     margin-bottom: 255px;
     margin-left: 40%;
     user-select: none;
-    color: white;
+    color: black;
 }
 
 #phonenumbercontainer {
@@ -131,7 +131,7 @@ body::-webkit-scrollbar {
     position: absolute;
     font-size: 20px;
     display: block;
-    color: white;
+    color: black;
     font-family: Didot, serif;
     margin-top: 30px;
 }
@@ -144,7 +144,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     user-select: none;
     padding-bottom: 25px;
-    color: white;
+    color: black;
 }
 
 #emailinput {
@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     user-select: none;
     padding-bottom: 25px;
-    color: white;
+    color: black;
 }
 
 #phonenumberinput {
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
     top: 700px;
     left: 40%;
     user-select: none;
-    color: white;
+    color: black;
 }
 
 #helpcontainer {
