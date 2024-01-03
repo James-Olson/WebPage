@@ -7,19 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Olson</title>
     <link rel="stylesheet" th:href="@{/CSS/Home.css}" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" th:href="@{/CSS/Email.css}" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/43d20c2690.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-<div id="landingcontainer1">
-    <img id="curtain" th:src='@{/img/Curtain.png}'>
-    <video id="covermovie" loop autoplay muted>
+<div class="hide" id="landingcontainer1">
+    <img class="hide" id="curtain" th:src='@{/img/Curtain.png}'>
+    <video class="hide" id="covermovie" loop autoplay muted>
         <source th:src='@{/img/CoverMovie.mp4}' type="video/mp4">
     </video>
-    <span id="james">James</span>
-    <span id="olson">Olson</span>
+    <span class="hide" id="james">James</span>
+    <span class="hide" id="olson">Olson</span>
 </div>
-<div id="aboutme">
+<div class="hide" id="aboutme">
     <!--    <div>
             <img id="Selfie" th:src='@{/img/Selfie.png}'>
         </div>-->
@@ -29,29 +32,84 @@
                         and to work collaboratively makes me a valuable asset to a software development team. I look forward to
                         delivering innovative software for the most meaningful reason.
     </span>
-    <ul>
-        <li><a id="linkedin" href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+    <ul class="hide">
+        <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/james-olson456/"><i
+                class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
         <li><a id="email" href="#"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
-        <li><a id="github" href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a id="github" target="_blank" href="https://github.com/James-Olson"><i class="fa-brands fa-github"
+                                                                                    aria-hidden="true"></i></a></li>
         <li><a id="file" href="#"><i class="fa-regular fa-file" aria-hidden="true"></i></a></li>
     </ul>
-        <div id="homeline">
-            <svg viewBox="0 0 1000 200">
-                <polyline points="0,5 600,5 800,105 800,200 " stroke="#696969" fill="white" stroke-width=".5"/>
-            </svg>
-        </div>
+    <div class="hide homelinecontainer">
+        <svg viewBox="0 0 1000 200" class="homelinecontainer">
+            <defs>
+                <linearGradient id="gradient1" x1="-600%" y2="600%">
+                    <stop offset="50%" style="stop-color: grey"/>
+                    <stop offset="50%" style="stop-color: lightblue">
+                        <animate attributeName="offset" values="0.4;1" dur="6s" repeatCount="indefinite"/>
+                    </stop>
+                    <stop offset="50%" style="stop-color: gray"/>
+                </linearGradient>
+            </defs>
+            <polyline points="0,5 150,5 300,5 300,5 450,5 600,5 800,105 800,200" id="homeline" stroke="url(#gradient1)"
+                      fill="white"
+                      stroke-width="1">
+            </polyline>
+        </svg>
+    </div>
 </div>
 
 
+<!--<div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+<form>
+    <h1 id="nameheading">What can I call you?</h1>
+    <div id="namecontainer">
+        <div class="form-group">
+            <input type="text" class="form-control"  id="nameinput"
+                   placeholder="Ex. Mr. Smith">
+        </div>
+    </div>
+    <h1 id="respondheading">How can I respond to you?</h1>
+    <div id="emailcontainer">
+        <div class="form-group" id="emailcontainerwidth">
+            <label for="emailinput" id="emailinputlabel">Whats your email address?</label>
+            <input type="email" id="emailinput" class="form-control" placeholder="Ex. johndoe36@yahoo.com">
+            <span id = "myemail">My email: jamesolson377@gmail.com</span>
+        </div>
+    </div>
+    <div id="phonenumbercontainer">
+        <div class="form-group" id="phonenumbercontainerwidth">
+            <label for="phonenumberinput" id="phonenumberinputlabel">Whats your telephone number?</label>
+            <input type="text" id="phonenumberinput" class="form-control" placeholder="Ex. (555) 555-4800">
+        </div>
+    </div>
+    <h1 id="helpheading">How may I help you?</h1>
+    <div id="helpcontainer">
+        <div class="form-group" id="helpcontainerwidth">
+            <input id="helpinput" class="form-control">
+        </div>
+    </div>
+
+
+    <div>
+        <div class="form-group">
+            <label for="offerinput">Have an offer?</label>
+            <input type="file" class="form-control-file" id="offerinput">
+        </div>
+    </div>
+</form>-->
+
+<script type="text/javascript" th:src="@{/JS/emailpagetransition.js}"></script>
 <script type="text/javascript" th:src="@{/JS/ScrollFunction.js}"></script>
 <script type="text/javascript" th:src="@{/JS/NameDisplay.js}"></script>
 <script type="text/javascript" th:src="@{/JS/curtainfunction.js}"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<!--DEC30th-->
-<!--view/download resume window-->
-<!--about me text-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 
 </body>
