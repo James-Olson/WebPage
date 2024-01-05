@@ -171,7 +171,7 @@ ul li {
 }
 
 #linkedin:hover {
-    color: lightblue;
+    color: blue;
     box-shadow: 0 0 15px darkblue;
     text-shadow: 0 0 15px darkblue;
 }

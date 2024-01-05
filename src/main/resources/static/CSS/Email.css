@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 #nameheading {
     position: absolute;
     font-family: Didot, serif;
-    top: 80px;
+    top: 40px;
     left: 450px;
     user-select: none;
     color: black;
@@ -69,13 +69,13 @@ body::-webkit-scrollbar {
 
 #namecontainer {
     position: absolute;
-    top: 150px;
+    top: 110px;
     left: 325px;
     width: 25%;
 }
 
 #nameinput {
-    position: absolute;
+    position: relative;
     font-family: Didot, serif;
 }
 
@@ -83,8 +83,7 @@ body::-webkit-scrollbar {
     position: absolute;
     font-family: Didot, serif;
     top: 225px;
-    margin-bottom: 255px;
-    margin-left: 40%;
+    left: 450px;
     user-select: none;
     color: black;
 }
@@ -94,16 +93,15 @@ body::-webkit-scrollbar {
     display: inline-block;
     width: 25%;
     height: 300px;
-    top: 300px;
+    top: 310px;
     left: 960px;
     background-color: coral;
     border-radius: 25px;
     text-align: center;
-    border-width: 20px;
 }
 
 #phonenumbercontainerwidth {
-    position: absolute;
+    position: relative;
     width: 75%;
     display: inline-block;
 }
@@ -113,48 +111,46 @@ body::-webkit-scrollbar {
     display: inline-block;
     width: 25%;
     height: 300px;
-    top: 300px;
+    top: 310px;
     left: 20%;
     background-color: coral;
     border-radius: 25px;
     text-align: center;
-    border-width: 10px;
 }
 
 #emailcontainerwidth {
-    position: absolute;
+    position: relative;
     width: 75%;
     display: inline-block;
 }
 
 #myemail {
-    position: absolute;
+    position: relative;
     font-size: 20px;
-    display: block;
+    display: inline-block;
     color: black;
     font-family: Didot, serif;
-    margin-top: 30px;
+    top: 90px;
 }
 
 #emailinputlabel {
-    position: absolute;
+    position: relative;
     font-size: 23px;
     font-family: Didot, serif;
     padding-top: 20px;
     display: inline-block;
-    user-select: none;
     padding-bottom: 25px;
+    user-select: none;
     color: black;
 }
 
 #emailinput {
-    position: absolute;
+    position: relative;
     font-family: Didot, serif;
-    outline: none;
 }
 
 #phonenumberinputlabel {
-    position: absolute;
+    position: relative;
     font-size: 23px;
     font-family: Didot, serif;
     padding-top: 20px;
@@ -165,7 +161,7 @@ body::-webkit-scrollbar {
 }
 
 #phonenumberinput {
-    position: absolute;
+    position: relative;
     font-family: Didot, serif;
 }
 
@@ -173,22 +169,78 @@ body::-webkit-scrollbar {
     position: absolute;
     font-family: Didot, serif;
     top: 700px;
-    left: 40%;
+    left: 450px;
     user-select: none;
     color: black;
 }
 
 #helpcontainer {
     position: absolute;
-    left: 37%;
+    left: 325px;
     top: 800px;
-    width: 25%;
+    width: 45%;
+    height: 250px;
     display: inline-block;
 }
 
+#helpcontainerwidth{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+
+
 #helpinput {
-    position: absolute;
+    position: relative;
     font-family: Didot, serif;
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: blue;
+    border: 2px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+    animation: btnTransition 3s linear infinite;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: blue;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn svg {
+    animation: svgTransition 3s linear infinite;
+}
+
+.btn span {
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+@keyframes svgTransition {
+    0% {
+        stroke-dashoffset: 150;
+    }
+    100% {
+        stroke-dashoffset: -480;
+    }
 }
 
 @keyframes drop {
