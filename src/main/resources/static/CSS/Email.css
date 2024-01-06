@@ -178,69 +178,55 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 325px;
     top: 800px;
-    width: 45%;
+    width: 55%;
     height: 250px;
     display: inline-block;
 }
 
 #helpcontainerwidth{
     position: relative;
-    width: 50%;
+    width: 100%;
     display: inline-block;
-    height: 100%;
 }
 
-
 #helpinput {
+    resize: none;
     position: relative;
     font-family: Didot, serif;
 }
 
-.center {
-    width: 180px;
-    height: 60px;
+.buttoncontainer {
     position: absolute;
+    bottom: 100px;
+    right: 100px;
+    height: 60px;
+    width: 300px;
 }
 
-.btn {
-    width: 180px;
-    height: 60px;
+.fileinputlabel {
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    background: blue;
-    border: 2px solid #91C9FF;
-    outline: none;
-    transition: 1s ease-in-out;
-    animation: btnTransition 3s linear infinite;
+    border: 1px solid gray;
+    color: blue;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
-svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: blue;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-}
-
-.btn svg {
-    animation: svgTransition 3s linear infinite;
-}
-
-.btn span {
-    color: black;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-@keyframes svgTransition {
-    0% {
-        stroke-dashoffset: 150;
-    }
-    100% {
-        stroke-dashoffset: -480;
-    }
+.fileinput {
+    position: relative;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 @keyframes drop {
