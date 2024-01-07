@@ -44,22 +44,33 @@
             <textarea class="form-control" id="helpinput" rows="5"></textarea>
         </div>
     </div>-->
+
+
+<!--<svg width="180px" height="60px" viewBox="0 0 180 60">
+    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"/>
+    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"/>
+</svg>-->
+
+
 <div class="buttoncontainer">
-    <label for="file" class="fileinputlabel">upload
-        <input type="file" id="file" class="fileinput">
+    <svg width="180px" height="60px" viewBox="0 0 180 60">
+        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"/>
+        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"/>
+    </svg>
+    <label for="file" class="fileinputlabel">
+        <input type="file" id="file" class="fileinput" onchange="displayFileName()">
+        Choose File
     </label>
 </div>
 
-<!--    <div>
-        <div class="form-group">
-            <label for="offerinput">Have an offer?</label>
-            <input type="file" class="form-control-file" id="offerinput">
-        </div>
-    </div>-->
+
+<div id="selectedFile" class="filename"></div>
+
 <!--</form>-->
 
+<script>
 
-
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
