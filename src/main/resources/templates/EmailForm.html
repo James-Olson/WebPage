@@ -9,9 +9,10 @@
     <link rel="stylesheet" th:href="@{/CSS/Email.css}" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-<!--<div class="lines">
+<div class="lines">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
@@ -43,36 +44,73 @@
         <div class="form-group" id="helpcontainerwidth">
             <textarea class="form-control" id="helpinput" rows="5"></textarea>
         </div>
-    </div>-->
-
-
-<!--<svg width="180px" height="60px" viewBox="0 0 180 60">
-    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"/>
-    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"/>
-</svg>-->
-
-
-<div class="buttoncontainer">
-    <svg width="180px" height="60px" viewBox="0 0 180 60">
-        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"/>
-        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"/>
-    </svg>
-    <label for="file" class="fileinputlabel">
-        <input type="file" id="file" class="fileinput" onchange="displayFileName()">
-        Choose File
-    </label>
-</div>
-
-
-<div id="selectedFile" class="filename"></div>
-
-<!--</form>-->
-
+    </div>
+    <!--    <div class="backbuttoncontainer">
+            <svg id="svg" width="215px" height="54px" viewBox="0 0 215 54">
+                <defs>
+                    <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgba(255, 255, 255, 0)"/>
+                        <stop offset="75%" style="stop-color: #ADD8E6"/>
+                        <stop offset="100%" style="stop-color: #ADD8E6"/>
+                    </linearGradient>
+                </defs>
+                <polyline points="215,0 215,54 0,54 0,0 215,0" class="bg-line" style="stroke: url(#grad);"/>
+                <polyline points="215,0 215,54 0,54 0,0 215,0" class="hl-line" style="stroke: url(#grad);"/>
+            </svg>
+            <label for="file" class="fileinputlabel">
+                <a href="home"></a>
+                Back To Home
+            </label>
+        </div>-->
+    <div class="submitbuttoncontainer">
+        <svg id="svg" width="215px" height="54px" viewBox="0 0 215 54">
+            <defs>
+                <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgba(255, 255, 255, 0)"/>
+                    <stop offset="75%" style="stop-color: #ADD8E6"/>
+                    <stop offset="100%" style="stop-color: #ADD8E6"/>
+                </linearGradient>
+            </defs>
+            <polyline points="215,0 215,54 0,54 0,0 215,0" class="bg-line" style="stroke: url(#grad);"/>
+            <polyline points="215,0 215,54 0,54 0,0 215,0" class="hl-line" style="stroke: url(#grad);"/>
+        </svg>
+        <label for="submit" class="submitlabel">
+            <input type="submit" id="submit" class="formsubmit">
+            Send
+        </label>
+    </div>
+        <div class="filebuttoncontainer">
+            <svg id="svg" width="215px" height="54px" viewBox="0 0 215 54">
+                <defs>
+                    <linearGradient id="grad" x1="150%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgba(255, 255, 255, 0)"/>
+                        <stop offset="75%" style="stop-color: #ADD8E6"/>
+                        <stop offset="100%" style="stop-color: #ADD8E6"/>
+                    </linearGradient>
+                </defs>
+                <polyline points="215,0 215,54 0,54 0,0 215,0" class="bg-line" style="stroke: url(#grad);"/>
+                <polyline points="215,0 215,54 0,54 0,0 215,0" class="hl-line" style="stroke: url(#grad);"/>
+            </svg>
+            <label for="file" class="fileinputlabel">
+                <input type="file" id="file" class="fileinput" onchange="displayFileName()">
+                Choose File
+            </label>
+        </div>
+    <!--<div id="selectedFile" class="filename"></div>-->
+</form>
 <script>
+    function displayFileName() {
+        const fileInput = document.getElementById('file');
+        const selectedFile = document.getElementById('selectedFile');
 
+
+        if (fileInput.files.length > 0) {
+            selectedFile.textContent = 'Selected File: ' + fileInput.files[0].name;
+        } else {
+            selectedFile.textContent = '';
+        }
+    }
 </script>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
