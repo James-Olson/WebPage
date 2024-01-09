@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
 #nameheading {
     position: absolute;
     font-family: Didot, serif;
-    top: 40px;
+    top: 35px;
     left: 450px;
     user-select: none;
     color: black;
@@ -69,14 +69,15 @@ body::-webkit-scrollbar {
 
 #namecontainer {
     position: absolute;
-    top: 110px;
-    left: 325px;
+    top: 120px;
+    left: 525px;
     width: 25%;
 }
 
 #nameinput {
     position: relative;
     font-family: Didot, serif;
+    cursor: default !important;
 }
 
 #respondheading {
@@ -145,6 +146,7 @@ body::-webkit-scrollbar {
 #emailinput {
     position: relative;
     font-family: Didot, serif;
+    cursor: default !important;
 }
 
 #phonenumberinputlabel {
@@ -161,6 +163,7 @@ body::-webkit-scrollbar {
 #phonenumberinput {
     position: relative;
     font-family: Didot, serif;
+    cursor: default !important;
 }
 
 #helpheading {
@@ -191,6 +194,7 @@ body::-webkit-scrollbar {
     resize: none;
     position: relative;
     font-family: Didot, serif;
+    cursor: default !important;
 }
 
 svg {
@@ -221,6 +225,7 @@ svg {
     display: inline-block;
     z-index: 1;
     box-sizing: border-box;
+    cursor: default !important;
 }
 
 .fileinputlabel {
@@ -230,6 +235,7 @@ svg {
     background-color: white;
     color: #5CA4EA;
     position: relative;
+    cursor: default !important;
 }
 
 .fileinput {
@@ -240,23 +246,42 @@ svg {
     width: 100%;
     height: 100%;
     opacity: 0;
+    cursor: default !important;
 }
 
-.filename {
-    margin-top: 10px;
-}
-
-.backbuttoncontainer {
+.backhomecontainer {
     width: 219px;
     border: 2px solid;
     color: lightgray;
     position: absolute;
     top: 30px;
-    right: 165px;
+    left: 65px;
     overflow: hidden;
     display: inline-block;
     z-index: 1;
     box-sizing: border-box;
+    cursor: default !important;
+}
+
+.backhomehide {
+    z-index: 1;
+    display: inline-block;
+    padding: 15px 55px;
+    background-color: white;
+    color: #5CA4EA;
+    position: relative;
+    cursor: default !important;
+}
+
+.backhomeclick {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: default !important;
 }
 
 .submitbuttoncontainer {
@@ -264,21 +289,23 @@ svg {
     border: 2px solid;
     color: lightgray;
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
     right: 165px;
     overflow: hidden;
     display: inline-block;
     z-index: 1;
     box-sizing: border-box;
+    cursor: default !important;
 }
 
 .submitlabel {
     z-index: 1;
     display: inline-block;
-    padding: 15px 65px;
+    padding: 15px 90px;
     background-color: white;
     color: #5CA4EA;
     position: relative;
+    cursor: default !important;
 }
 
 .formsubmit {
@@ -289,6 +316,11 @@ svg {
     width: 100%;
     height: 100%;
     opacity: 0;
+    cursor: default !important;
+}
+
+.filename {
+    margin-top: 10px;
 }
 
 @keyframes drop {
